@@ -1,0 +1,8 @@
+S:\Apps\Dot Net\OOPSproject\bin\Debug\OOPSproject.exe.config
+S:\Apps\Dot Net\OOPSproject\bin\Debug\OOPSproject.exe
+S:\Apps\Dot Net\OOPSproject\bin\Debug\OOPSproject.pdb
+S:\Apps\Dot Net\OOPSproject\obj\Debug\OOPSproject.csproj.AssemblyReference.cache
+S:\Apps\Dot Net\OOPSproject\obj\Debug\OOPSproject.csproj.SuggestedBindingRedirects.cache
+S:\Apps\Dot Net\OOPSproject\obj\Debug\OOPSproject.csproj.CoreCompileInputs.cache
+S:\Apps\Dot Net\OOPSproject\obj\Debug\OOPSproject.exe
+S:\Apps\Dot Net\OOPSproject\obj\Debug\OOPSproject.pdb

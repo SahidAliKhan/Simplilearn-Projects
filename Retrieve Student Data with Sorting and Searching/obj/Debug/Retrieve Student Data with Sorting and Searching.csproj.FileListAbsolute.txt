@@ -1,0 +1,8 @@
+S:\Apps\Dot Net\Retrieve Student Data with Sorting and Searching\bin\Debug\Retrieve Student Data with Sorting and Searching.exe.config
+S:\Apps\Dot Net\Retrieve Student Data with Sorting and Searching\bin\Debug\Retrieve Student Data with Sorting and Searching.exe
+S:\Apps\Dot Net\Retrieve Student Data with Sorting and Searching\bin\Debug\Retrieve Student Data with Sorting and Searching.pdb
+S:\Apps\Dot Net\Retrieve Student Data with Sorting and Searching\obj\Debug\Retrieve Student Data with Sorting and Searching.csproj.AssemblyReference.cache
+S:\Apps\Dot Net\Retrieve Student Data with Sorting and Searching\obj\Debug\Retrieve Student Data with Sorting and Searching.csproj.SuggestedBindingRedirects.cache
+S:\Apps\Dot Net\Retrieve Student Data with Sorting and Searching\obj\Debug\Retrieve Student Data with Sorting and Searching.csproj.CoreCompileInputs.cache
+S:\Apps\Dot Net\Retrieve Student Data with Sorting and Searching\obj\Debug\Retrieve Student Data with Sorting and Searching.exe
+S:\Apps\Dot Net\Retrieve Student Data with Sorting and Searching\obj\Debug\Retrieve Student Data with Sorting and Searching.pdb

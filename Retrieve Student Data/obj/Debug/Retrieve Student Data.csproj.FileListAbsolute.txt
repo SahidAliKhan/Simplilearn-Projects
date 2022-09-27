@@ -1,0 +1,11 @@
+S:\Apps\Dot Net\Retrieve Student Data\bin\Debug\Retrieve Student Data.exe.config
+S:\Apps\Dot Net\Retrieve Student Data\bin\Debug\Retrieve Student Data.exe
+S:\Apps\Dot Net\Retrieve Student Data\bin\Debug\Retrieve Student Data.pdb
+S:\Apps\Dot Net\Retrieve Student Data\obj\Debug\Retrieve Student Data.csproj.AssemblyReference.cache
+S:\Apps\Dot Net\Retrieve Student Data\obj\Debug\Retrieve Student Data.csproj.SuggestedBindingRedirects.cache
+S:\Apps\Dot Net\Retrieve Student Data\obj\Debug\Retrieve Student Data.csproj.CoreCompileInputs.cache
+S:\Apps\Dot Net\Retrieve Student Data\obj\Debug\Retrieve Student Data.exe
+S:\Apps\Dot Net\Retrieve Student Data\obj\Debug\Retrieve Student Data.pdb
+S:\Apps\Dot Net\Retrieve Student Data\bin\Debug\StudentLibrary.dll
+S:\Apps\Dot Net\Retrieve Student Data\bin\Debug\StudentLibrary.pdb
+S:\Apps\Dot Net\Retrieve Student Data\obj\Debug\Retrieve Student Data.csproj.CopyComplete
