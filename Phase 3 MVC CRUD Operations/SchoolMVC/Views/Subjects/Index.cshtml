@@ -1,0 +1,45 @@
+﻿@model IEnumerable<SchoolMVC.Models.SubjectsModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Add a Subject", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SubjectID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SubjectName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClassID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SubjectID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SubjectName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClassID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit a Subject", "Edit", new { id = Convert.ToInt32(item.SubjectID) }) |
+            @Html.ActionLink("Subject Details", "Details", new { id = item.SubjectID }) |
+            @Html.ActionLink("Delete a Subject", "Delete", new { id = item.SubjectID })
+        </td>
+    </tr>
+}
+
+</table>

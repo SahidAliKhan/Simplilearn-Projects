@@ -1,0 +1,39 @@
+﻿@model IEnumerable<SchoolMVC.Models.ClassModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Add a Class", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ClassID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClassName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClassID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClassName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit a Class", "Edit", new { id = Convert.ToInt32(item.ClassID) }) |
+            @Html.ActionLink("Class Details", "Details", new { id = item.ClassID }) |
+            @Html.ActionLink("Delete a Class", "Delete", new { id = item.ClassID })
+        </td>
+    </tr>
+}
+
+</table>

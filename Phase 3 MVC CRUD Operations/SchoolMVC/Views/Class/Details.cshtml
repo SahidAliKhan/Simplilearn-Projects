@@ -1,0 +1,34 @@
+﻿@model SchoolMVC.Models.ClassModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ClassModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ClassID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClassID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClassName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClassName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit a Class", "Edit", new { id = Convert.ToInt32(Model.ClassID) }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
