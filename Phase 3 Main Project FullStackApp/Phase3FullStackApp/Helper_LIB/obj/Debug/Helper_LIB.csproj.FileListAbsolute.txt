@@ -1,0 +1,15 @@
+S:\Apps\Dot Net\Phase3FullStackApp\Helper_LIB\bin\Debug\Helper_LIB.dll
+S:\Apps\Dot Net\Phase3FullStackApp\Helper_LIB\bin\Debug\Helper_LIB.pdb
+S:\Apps\Dot Net\Phase3FullStackApp\Helper_LIB\obj\Debug\Helper_LIB.csproj.AssemblyReference.cache
+S:\Apps\Dot Net\Phase3FullStackApp\Helper_LIB\obj\Debug\Helper_LIB.csproj.CoreCompileInputs.cache
+S:\Apps\Dot Net\Phase3FullStackApp\Helper_LIB\obj\Debug\Helper_LIB.dll
+S:\Apps\Dot Net\Phase3FullStackApp\Helper_LIB\obj\Debug\Helper_LIB.pdb
+S:\Apps\Dot Net\Phase3FullStackApp\Helper_LIB\bin\Debug\Helper_LIB.dll.config
+S:\Apps\Dot Net\Phase3FullStackApp\Helper_LIB\bin\Debug\EntityFramework.dll
+S:\Apps\Dot Net\Phase3FullStackApp\Helper_LIB\bin\Debug\EntityFramework.SqlServer.dll
+S:\Apps\Dot Net\Phase3FullStackApp\Helper_LIB\bin\Debug\EntityFramework.xml
+S:\Apps\Dot Net\Phase3FullStackApp\Helper_LIB\bin\Debug\EntityFramework.SqlServer.xml
+S:\Apps\Dot Net\Phase3FullStackApp\Helper_LIB\obj\Debug\Helper_LIB.csproj.CopyComplete
+S:\Apps\Dot Net\Phase3FullStackApp\Helper_LIB\bin\Debug\DAL_Lib.dll
+S:\Apps\Dot Net\Phase3FullStackApp\Helper_LIB\bin\Debug\DAL_Lib.pdb
+S:\Apps\Dot Net\Phase3FullStackApp\Helper_LIB\bin\Debug\DAL_Lib.dll.config
