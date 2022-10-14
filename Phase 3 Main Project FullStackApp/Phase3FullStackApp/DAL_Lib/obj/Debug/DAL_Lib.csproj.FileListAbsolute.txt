@@ -1,0 +1,12 @@
+S:\Apps\Dot Net\Phase3FullStackApp\DAL_Lib\bin\Debug\DAL_Lib.pdb
+S:\Apps\Dot Net\Phase3FullStackApp\DAL_Lib\bin\Debug\EntityFramework.dll
+S:\Apps\Dot Net\Phase3FullStackApp\DAL_Lib\bin\Debug\EntityFramework.SqlServer.dll
+S:\Apps\Dot Net\Phase3FullStackApp\DAL_Lib\bin\Debug\EntityFramework.xml
+S:\Apps\Dot Net\Phase3FullStackApp\DAL_Lib\bin\Debug\EntityFramework.SqlServer.xml
+S:\Apps\Dot Net\Phase3FullStackApp\DAL_Lib\obj\Debug\DAL_Lib.csproj.AssemblyReference.cache
+S:\Apps\Dot Net\Phase3FullStackApp\DAL_Lib\obj\Debug\DAL_Lib.csproj.CoreCompileInputs.cache
+S:\Apps\Dot Net\Phase3FullStackApp\DAL_Lib\obj\Debug\DAL_Lib.csproj.CopyComplete
+S:\Apps\Dot Net\Phase3FullStackApp\DAL_Lib\obj\Debug\DAL_Lib.pdb
+S:\Apps\Dot Net\Phase3FullStackApp\DAL_Lib\bin\Debug\DAL_Lib.dll.config
+S:\Apps\Dot Net\Phase3FullStackApp\DAL_Lib\bin\Debug\DAL_Lib.dll
+S:\Apps\Dot Net\Phase3FullStackApp\DAL_Lib\obj\Debug\DAL_Lib.dll
