@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DigitalRetailersDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="lapbrand">
+    <Key>
+      <PropertyRef Name="brandid" />
+    </Key>
+    <Property Name="brandid" Type="Int32" Nullable="false" />
+    <Property Name="brandname" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="placedorders" Relationship="Self.fk_lapbrands" FromRole="lapbrands" ToRole="placedorders" />
+  </EntityType>
+  <EntityType Name="logintable">
+    <Key>
+      <PropertyRef Name="customerid" />
+    </Key>
+    <Property Name="customerid" Type="Int32" Nullable="false" />
+    <Property Name="customername" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="placedorders" Relationship="Self.fk_logintable" FromRole="logintable" ToRole="placedorders" />
+  </EntityType>
+  <EntityType Name="placedorder">
+    <Key>
+      <PropertyRef Name="issueid" />
+    </Key>
+    <Property Name="issueid" Type="Int32" Nullable="false" />
+    <Property Name="customerid" Type="Int32" />
+    <Property Name="brandid" Type="Int32" />
+    <Property Name="orderdate" Type="DateTime" Precision="0" />
+    <Property Name="receiveddate" Type="DateTime" Precision="0" />
+    <Property Name="comments" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="lapbrand" Relationship="Self.fk_lapbrands" FromRole="placedorders" ToRole="lapbrands" />
+    <NavigationProperty Name="logintable" Relationship="Self.fk_logintable" FromRole="placedorders" ToRole="logintable" />
+  </EntityType>
+  <Association Name="fk_lapbrands">
+    <End Role="lapbrands" Type="Self.lapbrand" Multiplicity="0..1" />
+    <End Role="placedorders" Type="Self.placedorder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lapbrands">
+        <PropertyRef Name="brandid" />
+      </Principal>
+      <Dependent Role="placedorders">
+        <PropertyRef Name="brandid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_logintable">
+    <End Role="logintable" Type="Self.logintable" Multiplicity="0..1" />
+    <End Role="placedorders" Type="Self.placedorder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="logintable">
+        <PropertyRef Name="customerid" />
+      </Principal>
+      <Dependent Role="placedorders">
+        <PropertyRef Name="customerid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DigitalRetailersDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="lapbrands" EntityType="Self.lapbrand" />
+    <EntitySet Name="logintables" EntityType="Self.logintable" />
+    <EntitySet Name="placedorders" EntityType="Self.placedorder" />
+    <AssociationSet Name="fk_lapbrands" Association="Self.fk_lapbrands">
+      <End Role="lapbrands" EntitySet="lapbrands" />
+      <End Role="placedorders" EntitySet="placedorders" />
+    </AssociationSet>
+    <AssociationSet Name="fk_logintable" Association="Self.fk_logintable">
+      <End Role="logintable" EntitySet="logintables" />
+      <End Role="placedorders" EntitySet="placedorders" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

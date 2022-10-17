@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Phase3Ecommerce.Models.lapmodel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.lapid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lapname)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.lapid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lapname)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.lapid }) |
+            @Html.ActionLink("Details", "Details", new { id = item.lapid }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.lapid })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DigitalRetailersDBModelStoreContainer" CdmEntityContainer="DigitalRetailersDBEntities">
+    <EntitySetMapping Name="lapbrands">
+      <EntityTypeMapping TypeName="DigitalRetailersDBModel.lapbrand">
+        <MappingFragment StoreEntitySet="lapbrands">
+          <ScalarProperty Name="brandid" ColumnName="brandid" />
+          <ScalarProperty Name="brandname" ColumnName="brandname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="logintables">
+      <EntityTypeMapping TypeName="DigitalRetailersDBModel.logintable">
+        <MappingFragment StoreEntitySet="logintable">
+          <ScalarProperty Name="customerid" ColumnName="customerid" />
+          <ScalarProperty Name="customername" ColumnName="customername" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="placedorders">
+      <EntityTypeMapping TypeName="DigitalRetailersDBModel.placedorder">
+        <MappingFragment StoreEntitySet="placedorders">
+          <ScalarProperty Name="issueid" ColumnName="issueid" />
+          <ScalarProperty Name="customerid" ColumnName="customerid" />
+          <ScalarProperty Name="brandid" ColumnName="brandid" />
+          <ScalarProperty Name="orderdate" ColumnName="orderdate" />
+          <ScalarProperty Name="receiveddate" ColumnName="receiveddate" />
+          <ScalarProperty Name="comments" ColumnName="comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

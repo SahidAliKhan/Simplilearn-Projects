@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Phase3Ecommerce.Models.lapmodel>
+
+@{
+    ViewBag.Title = "LapList";
+}
+
+<h2>LapList</h2>
+
+<p>
+    @Html.ActionLink("Mypreviousorders", "Previousorders")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.lapid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lapname)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.lapid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lapname)
+        </td>
+        <td>
+            @Html.ActionLink("Add to cart", "AddtoCart", new { id = item.lapid })
+        </td>
+    </tr>
+}
+
+</table>

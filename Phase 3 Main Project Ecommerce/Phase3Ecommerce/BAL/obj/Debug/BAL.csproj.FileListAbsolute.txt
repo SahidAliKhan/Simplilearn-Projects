@@ -1,0 +1,12 @@
+S:\Apps\Dot Net\Phase3Ecommerce\BAL\bin\Debug\BAL.dll
+S:\Apps\Dot Net\Phase3Ecommerce\BAL\bin\Debug\BAL.pdb
+S:\Apps\Dot Net\Phase3Ecommerce\BAL\obj\Debug\BAL.csproj.AssemblyReference.cache
+S:\Apps\Dot Net\Phase3Ecommerce\BAL\obj\Debug\BAL.csproj.CoreCompileInputs.cache
+S:\Apps\Dot Net\Phase3Ecommerce\BAL\obj\Debug\BAL.dll
+S:\Apps\Dot Net\Phase3Ecommerce\BAL\obj\Debug\BAL.pdb
+S:\Apps\Dot Net\Phase3Ecommerce\BAL\bin\Debug\BAL.dll.config
+S:\Apps\Dot Net\Phase3Ecommerce\BAL\bin\Debug\EntityFramework.dll
+S:\Apps\Dot Net\Phase3Ecommerce\BAL\bin\Debug\EntityFramework.SqlServer.dll
+S:\Apps\Dot Net\Phase3Ecommerce\BAL\bin\Debug\EntityFramework.xml
+S:\Apps\Dot Net\Phase3Ecommerce\BAL\bin\Debug\EntityFramework.SqlServer.xml
+S:\Apps\Dot Net\Phase3Ecommerce\BAL\obj\Debug\BAL.csproj.CopyComplete

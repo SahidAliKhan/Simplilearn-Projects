@@ -1,0 +1,34 @@
+﻿@model Phase3Ecommerce.Models.lapmodel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>lapmodel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.lapid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lapid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lapname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lapname)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.lapid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

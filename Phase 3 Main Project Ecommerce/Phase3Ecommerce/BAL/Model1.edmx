@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DigitalRetailersDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="lapbrands">
+          <Key>
+            <PropertyRef Name="brandid" />
+          </Key>
+          <Property Name="brandid" Type="int" Nullable="false" />
+          <Property Name="brandname" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="logintable">
+          <Key>
+            <PropertyRef Name="customerid" />
+          </Key>
+          <Property Name="customerid" Type="int" Nullable="false" />
+          <Property Name="customername" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="placedorders">
+          <Key>
+            <PropertyRef Name="issueid" />
+          </Key>
+          <Property Name="issueid" Type="int" Nullable="false" />
+          <Property Name="customerid" Type="int" />
+          <Property Name="brandid" Type="int" />
+          <Property Name="orderdate" Type="date" />
+          <Property Name="receiveddate" Type="date" />
+          <Property Name="comments" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <Association Name="fk_lapbrands">
+          <End Role="lapbrands" Type="Self.lapbrands" Multiplicity="0..1" />
+          <End Role="placedorders" Type="Self.placedorders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="lapbrands">
+              <PropertyRef Name="brandid" />
+            </Principal>
+            <Dependent Role="placedorders">
+              <PropertyRef Name="brandid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_logintable">
+          <End Role="logintable" Type="Self.logintable" Multiplicity="0..1" />
+          <End Role="placedorders" Type="Self.placedorders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="logintable">
+              <PropertyRef Name="customerid" />
+            </Principal>
+            <Dependent Role="placedorders">
+              <PropertyRef Name="customerid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DigitalRetailersDBModelStoreContainer">
+          <EntitySet Name="lapbrands" EntityType="Self.lapbrands" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="logintable" EntityType="Self.logintable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="placedorders" EntityType="Self.placedorders" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="fk_lapbrands" Association="Self.fk_lapbrands">
+            <End Role="lapbrands" EntitySet="lapbrands" />
+            <End Role="placedorders" EntitySet="placedorders" />
+          </AssociationSet>
+          <AssociationSet Name="fk_logintable" Association="Self.fk_logintable">
+            <End Role="logintable" EntitySet="logintable" />
+            <End Role="placedorders" EntitySet="placedorders" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DigitalRetailersDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="lapbrand">
+          <Key>
+            <PropertyRef Name="brandid" />
+          </Key>
+          <Property Name="brandid" Type="Int32" Nullable="false" />
+          <Property Name="brandname" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="placedorders" Relationship="Self.fk_lapbrands" FromRole="lapbrands" ToRole="placedorders" />
+        </EntityType>
+        <EntityType Name="logintable">
+          <Key>
+            <PropertyRef Name="customerid" />
+          </Key>
+          <Property Name="customerid" Type="Int32" Nullable="false" />
+          <Property Name="customername" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="placedorders" Relationship="Self.fk_logintable" FromRole="logintable" ToRole="placedorders" />
+        </EntityType>
+        <EntityType Name="placedorder">
+          <Key>
+            <PropertyRef Name="issueid" />
+          </Key>
+          <Property Name="issueid" Type="Int32" Nullable="false" />
+          <Property Name="customerid" Type="Int32" />
+          <Property Name="brandid" Type="Int32" />
+          <Property Name="orderdate" Type="DateTime" Precision="0" />
+          <Property Name="receiveddate" Type="DateTime" Precision="0" />
+          <Property Name="comments" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="lapbrand" Relationship="Self.fk_lapbrands" FromRole="placedorders" ToRole="lapbrands" />
+          <NavigationProperty Name="logintable" Relationship="Self.fk_logintable" FromRole="placedorders" ToRole="logintable" />
+        </EntityType>
+        <Association Name="fk_lapbrands">
+          <End Role="lapbrands" Type="Self.lapbrand" Multiplicity="0..1" />
+          <End Role="placedorders" Type="Self.placedorder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="lapbrands">
+              <PropertyRef Name="brandid" />
+            </Principal>
+            <Dependent Role="placedorders">
+              <PropertyRef Name="brandid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_logintable">
+          <End Role="logintable" Type="Self.logintable" Multiplicity="0..1" />
+          <End Role="placedorders" Type="Self.placedorder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="logintable">
+              <PropertyRef Name="customerid" />
+            </Principal>
+            <Dependent Role="placedorders">
+              <PropertyRef Name="customerid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DigitalRetailersDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="lapbrands" EntityType="Self.lapbrand" />
+          <EntitySet Name="logintables" EntityType="Self.logintable" />
+          <EntitySet Name="placedorders" EntityType="Self.placedorder" />
+          <AssociationSet Name="fk_lapbrands" Association="Self.fk_lapbrands">
+            <End Role="lapbrands" EntitySet="lapbrands" />
+            <End Role="placedorders" EntitySet="placedorders" />
+          </AssociationSet>
+          <AssociationSet Name="fk_logintable" Association="Self.fk_logintable">
+            <End Role="logintable" EntitySet="logintables" />
+            <End Role="placedorders" EntitySet="placedorders" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DigitalRetailersDBModelStoreContainer" CdmEntityContainer="DigitalRetailersDBEntities">
+          <EntitySetMapping Name="lapbrands">
+            <EntityTypeMapping TypeName="DigitalRetailersDBModel.lapbrand">
+              <MappingFragment StoreEntitySet="lapbrands">
+                <ScalarProperty Name="brandid" ColumnName="brandid" />
+                <ScalarProperty Name="brandname" ColumnName="brandname" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="logintables">
+            <EntityTypeMapping TypeName="DigitalRetailersDBModel.logintable">
+              <MappingFragment StoreEntitySet="logintable">
+                <ScalarProperty Name="customerid" ColumnName="customerid" />
+                <ScalarProperty Name="customername" ColumnName="customername" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="placedorders">
+            <EntityTypeMapping TypeName="DigitalRetailersDBModel.placedorder">
+              <MappingFragment StoreEntitySet="placedorders">
+                <ScalarProperty Name="issueid" ColumnName="issueid" />
+                <ScalarProperty Name="customerid" ColumnName="customerid" />
+                <ScalarProperty Name="brandid" ColumnName="brandid" />
+                <ScalarProperty Name="orderdate" ColumnName="orderdate" />
+                <ScalarProperty Name="receiveddate" ColumnName="receiveddate" />
+                <ScalarProperty Name="comments" ColumnName="comments" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
