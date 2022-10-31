@@ -1,0 +1,9 @@
+S:\Apps\Dot Net\OopsProjectTesting.Tests\OopsProjectTesting\bin\Debug\OopsProjectTesting.dll
+S:\Apps\Dot Net\OopsProjectTesting.Tests\OopsProjectTesting\bin\Debug\OopsProjectTesting.pdb
+S:\Apps\Dot Net\OopsProjectTesting.Tests\OopsProjectTesting\bin\Debug\nunit.framework.dll
+S:\Apps\Dot Net\OopsProjectTesting.Tests\OopsProjectTesting\bin\Debug\nunit.framework.xml
+S:\Apps\Dot Net\OopsProjectTesting.Tests\OopsProjectTesting\obj\Debug\OopsProjectTesting.csproj.AssemblyReference.cache
+S:\Apps\Dot Net\OopsProjectTesting.Tests\OopsProjectTesting\obj\Debug\OopsProjectTesting.csproj.CoreCompileInputs.cache
+S:\Apps\Dot Net\OopsProjectTesting.Tests\OopsProjectTesting\obj\Debug\OopsProjectTesting.csproj.CopyComplete
+S:\Apps\Dot Net\OopsProjectTesting.Tests\OopsProjectTesting\obj\Debug\OopsProjectTesting.dll
+S:\Apps\Dot Net\OopsProjectTesting.Tests\OopsProjectTesting\obj\Debug\OopsProjectTesting.pdb
