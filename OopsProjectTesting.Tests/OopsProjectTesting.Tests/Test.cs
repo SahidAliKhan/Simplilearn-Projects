@@ -7,9 +7,9 @@ namespace OopsProjectTesting.Tests
         [Test]
         public void TestClass()
         {
-            Students s = new Students();
-            Teachers t = new Teachers();
-            Subjects su = new Subjects();
+            //Students s = new Students();
+            //Teachers t = new Teachers();
+            //Subjects su = new Subjects();
 
             List<Students> Studentslist = new List<Students>();
             Studentslist.Add(new Students() { StudentName = "Sahid", StudentClass = 10, StudentSection = "A" });
