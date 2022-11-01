@@ -1,0 +1,3 @@
+﻿did till insert n list...
+
+update, delete n all remaining
