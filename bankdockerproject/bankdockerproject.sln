@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bankdockerproject", "bankdockerproject\bankdockerproject.csproj", "{DEED4B50-A7B1-4945-B5CD-59F2A8735BE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEED4B50-A7B1-4945-B5CD-59F2A8735BE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEED4B50-A7B1-4945-B5CD-59F2A8735BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEED4B50-A7B1-4945-B5CD-59F2A8735BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEED4B50-A7B1-4945-B5CD-59F2A8735BE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6591552C-7F5D-4B62-A63D-9882439B7ED2}
+	EndGlobalSection
+EndGlobal

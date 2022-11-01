@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "UED15WmFg8C7ZW8HLQdXzuD5x5bMygVtAPNR6DfbrtsVKUiRRPIEcT9NxePMgEIshvQs6jyIuM6jCc1c0b2m9Q==",
+  "success": true,
+  "projectFilePath": "S:\\Apps\\Dot Net\\bankdockerproject\\bankdockerproject\\bankdockerproject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\KIIT\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512"
+  ],
+  "logs": []
+}
