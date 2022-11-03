@@ -1,0 +1,32 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+</head>
+<body>
+    <fieldset id="UserInformation">
+        <legend>Customer Support Executive Login Page</legend>
+
+        <div class="card my-5">
+            @using (Html.BeginForm("Index", "Customer",
+new { ReturnUrl = ViewBag.ReturnUrl },
+FormMethod.Post, new { @class = "card-body cardbody-color p-lg-5" }))
+            {
+                @Html.AntiForgeryToken()
+            <div class="mb-3">
+                User ID:<input type="text" class="form-control" id="userid" name="userid" placeholder="Enter User ID">
+            </div>
+            <div class="mb-3">
+                Password:<input type="password" class="form-control" id="password" name="password" placeholder="Enter Password">
+            </div>
+            <div class="text-center"><button type="submit" class="btn btn-color px-5 mb-5 w-100">Login</button>
+            </div>
+            }
+        </div>
+    </fieldset>
+</body>
+</html>
